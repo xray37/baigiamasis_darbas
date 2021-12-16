@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    @include transition(0.3s);
+
+    span {
+        text-decoration: underline;
+        color: $manoSpalva
+    }
+
+    @include tablet {
+        text-align: left;
+    }
+
+    @include mobile {
+        text-align: center;
+    }
+}

@@ -1,0 +1,50 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "typography.scss";
+
+.block {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, $manoSpalva, $manoAntraSpalva);
+    cursor: pointer;
+    @include flex-align-all-sides;
+    @include transition($transition-timing);
+
+    @include tablet {
+        width: 100%;
+        height: 100%;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: pink;
+    }
+
+    &:hover,
+    &:active {
+        transform: scale(0.85);
+    }
+
+    &.solid {
+        background: $manoAntraSpalva;
+    }
+
+    p {
+        color: #fff;
+        font-size: 20px;
+        text-transform: uppercase;
+        @include transition(1.5s);
+
+        &:hover {
+            color: red;
+        }
+    }
+}
