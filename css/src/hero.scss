@@ -41,7 +41,10 @@
             }
 
             input:checked ~ label:before {
-                background: red;
+                background: #41D395;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
             }
 
             label {

@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="container">
-            <img src="images/logo.svg" alt="logo">
+            <img src="images/logo.svg" alt="main_logo">
             <nav>
                 <ul>
                     <li>Features</li>
@@ -23,23 +23,51 @@
                     <li>Contact</li>
                 </ul>
             </nav>
+            <div id="mobile-menu-trigger" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
         </div>
     </header>
     <main>
         <section class="hero">
             <div class="container">
+                <div class="column">
+                    <img src="images/logo.svg" alt="main_logo" width="250px">
+                    
+                    <h1 class="main">Explained propriety <br>of out perpetual to you</h1>
+                    <h4 class="h4">Insipidity the sufficient discretion imprudence resolution sir him decisively.
+                        Proceed how any engaged visitor. Explained propriety of out perpetual his you.
+                        Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</h4>
+
+                    <button class="download">DOWNLOAD</button>
+
+                </div>
                 <div class="form-box">
                     <form>
                         <div class="form-row">
-                            <div class="radio-input-wrap">
-                                <input type="radio" name="subscription" id="subscription-monthly" checked>
-                                <label for="subscription-monthly">Monthly</label>
-                            </div>
+                            <h2>Try your<span style="color:#E27866" > FREE </span>trial TODAY</h2>
+                            <p>Your details</p>
+                            <input type= "text" placeholder="  First Name">
+                            <input type= "text" placeholder="  Last Name">
+                            <input type= "number" placeholder="  Phone Number">
+                            <p class="">Type of subscription</p>
 
-                            <div class="radio-input-wrap">
-                                <input type="radio" name="subscription" id="subscription-yearly">
-                                <label for="subscription-yearly">Yearly</label>
+                            <div class="row">
+                                <div class="radio-input-wrap">
+                                    <input type="radio" name="subscription" id="subscription-monthly" checked>
+                                    <label for="subscription-monthly">Monthly</label>
+                                </div>
+
+                                <div class="radio-input-wrap">
+                                    <input type="radio" name="subscription" id="subscription-yearly">
+                                    <label for="subscription-yearly">Yearly</label>
+                                </div>
                             </div>
+                        </div>
+                        </div>
+                            <h2 style="background-color: #41D395; cursor: pointer;">GET STARTED</h2>
                         </div>
                     </form>
                 </div>
@@ -51,5 +79,6 @@
         <section></section>
     </main>
     <footer></footer>
+    <script src="style.js"></script>
 </body>
 </html>
