@@ -2,7 +2,6 @@
 
 // menu_burgeris
 
-
 let menuTrigger = document.getElementById("mobile-menu-trigger");
 let mobileMenu = document.querySelector("header nav");
 
