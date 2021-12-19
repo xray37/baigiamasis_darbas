@@ -1,0 +1,31 @@
+.pricing {
+    position: relative;
+    background-color: #6696E2;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h2 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.box {
+    position: relative;
+    align-items: center;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 97%;
+}
+
+p {
+    padding: 5px;
+}
