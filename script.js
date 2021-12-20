@@ -10,4 +10,6 @@ menuTrigger.addEventListener('click', function() {
   mobileMenu.classList.toggle("active");
 });
 
+// features section tab navigation
+
 
