@@ -38,3 +38,7 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+//ORAI:
+// API key:
+// 3938ac6ab938c88279184afe6c675938 & units=metric;
