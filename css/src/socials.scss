@@ -1,0 +1,104 @@
+.socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialsolumn1 {
+        flex-direction: column;
+        padding-left: 150px;
+    
+    h3 {
+        padding-left: 150px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-size: 20px;
+        color: #333333;
+    }
+
+    p {
+        padding-left: 150px;
+        padding-bottom: 20px;
+        font-size: 15px;
+        color: #86878B;
+    }
+}
+    
+.socialsColumn2 {
+    display:flex;
+    padding-right: 160px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+        
+        .facebook {
+            margin-right: 100px;
+            cursor: pointer;
+        }
+        .instagram {
+            margin-right: 100px;
+            cursor: pointer;
+        }
+        .twitter {
+            margin-right: 100px;
+            cursor: pointer;
+        }
+        .pinterest {
+            margin-right: 100px;
+            cursor: pointer;
+        }
+        .wifi {
+            cursor: pointer;
+        }
+    }
+
+
+    @media (max-width: 700px) { 
+        .socials {
+            display: block;
+           
+        .socialsolumn1 {
+            display: block;
+            text-align:center;
+            padding-top: 20px;
+
+            p {
+                padding-left: 0px;  
+            }
+            h3 {
+                padding-left: 0px;  
+            }
+        }
+
+        .socialsColumn2 {
+            position: relative;
+            justify-content: center;
+            padding-left: 25%;
+             
+            .facebook{
+                margin-right: 5px;
+                cursor: pointer;
+
+            }
+            .instagram{
+                margin-right: 5px;
+                cursor: pointer;
+    
+            }
+            .twitter{
+                margin-right: 5px;
+                cursor: pointer;
+       
+            }
+            .pinterest{
+                margin-right: 5px;
+                cursor: pointer;
+           
+            }
+            .wifi{
+                cursor: pointer;
+         
+            }
+        }
+    }
+}
+
+        
