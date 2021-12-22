@@ -1,7 +1,7 @@
 .hero {
     
     position: relative;
-    margin-top: 72px;
+    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -25,21 +25,17 @@
         display: flex;
         z-index: 999;
 
-    .column {
-        flex-direction: row;
-
-      
+    
         img {
             padding-bottom: 23px;
         }
         
     }
-    }
-
+    
     .form-box {        
         max-width: 500px;
         width: 100%;
-        border-radius: 5px;
+        border-radius: 9px;
         background-color: #fff;
 
         .form-row {
@@ -47,24 +43,35 @@
             flex-direction: column;
            
             
-        h2 {
+        .form-top {
             color: black;
             font-size: 20px;
             padding-top: 17px;
             padding-bottom: 16px;
             background-color: #F5F5F5;
             text-align: center;
+            border-top-left-radius: 9px;
+            border-top-right-radius: 9px;
+        }
 
-            
-            
+        .form-bottom {
+            color: white;
+            font-size: 24px;
+            padding-top: 17px;
+            padding-bottom: 16px;
+            text-align: center;
+            background-color: #41D395;
+            border-bottom-left-radius: 9px;
+            border-bottom-right-radius: 9px;
+            cursor: pointer;
         }
 
         p {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 900;
             padding-top: 20px;
-            padding-bottom: 22px;
-            padding-left: 51px;
+            padding-bottom: 25px;
+            padding-left: 50px;
 
         }
 
@@ -83,13 +90,14 @@
         }
         }
 
-        .row {
+        .rows {
             display: flex;
-            font-size: 9px;
-            
-            margin-left: 34px;
-            margin-bottom: 42px;
+            justify-content: space-around;
+            font-size: 12px;
+            margin-left: 20px;
+            margin-bottom: 40px;
         }
+
         .radio-input-wrap {
             flex-direction: row;
             margin-left: 17px;
@@ -148,14 +156,20 @@
 }
 
 .download {
-    border: 2px solid #FFFFFF;
-    padding: 12px 22px;
+    border: 1px solid #FFFFFF;
+    padding: 10px 30px;
     background-color: #42080800;
     color: #FFFFFF;
+
+    a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 14px;
+    }
 }
 
 
-@media (max-width: 830px) { 
+@media (max-width: 800px) { 
     .hero {
         display: flex;
     
@@ -166,5 +180,6 @@
         .form-box {
         .form-row {
             margin-top:30px;
-    }}}}}
-    
+        }
+    }
+}}}
