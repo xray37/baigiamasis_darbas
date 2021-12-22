@@ -3,13 +3,13 @@
     justify-content: space-between;
 }
 
-.socialsolumn1 {
+.socialsColumn1 {
         flex-direction: column;
         padding-left: 150px;
     
-    h3 {
+    .social-media {
         padding-left: 150px;
-        padding-top: 20px;
+        padding-top: 15px;
         padding-bottom: 5px;
         font-size: 20px;
         color: #333333;
@@ -33,18 +33,22 @@
             margin-right: 100px;
             cursor: pointer;
         }
+
         .instagram {
             margin-right: 100px;
             cursor: pointer;
         }
+
         .twitter {
             margin-right: 100px;
             cursor: pointer;
         }
+
         .pinterest {
             margin-right: 100px;
             cursor: pointer;
         }
+        
         .wifi {
             cursor: pointer;
         }

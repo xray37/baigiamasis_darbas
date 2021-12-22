@@ -27,13 +27,14 @@
 
     
         img {
-            padding-bottom: 23px;
+            padding-bottom: 100px;
         }
         
     }
     
     .form-box {        
         max-width: 500px;
+        height: 450px;
         width: 100%;
         border-radius: 9px;
         background-color: #fff;
@@ -85,7 +86,7 @@
             border-top: #ffffff00;
             border-left: #ffffff00;
             border-right: #ffffff00;
-            border-bottom: 1px solid #DDDDDD;
+            border-bottom: 1px solid #c2c2c2ee;
             width: 260px;
         }
         }
@@ -100,7 +101,7 @@
 
         .radio-input-wrap {
             flex-direction: row;
-            margin-left: 17px;
+            margin-right: 10px;
             
             input {
                 font-size: 9px;
@@ -132,7 +133,7 @@
     }
 }
 
-.title {
+.name {
     position: relative;
     font-size: 36px;
     color: #FFFFFF;
