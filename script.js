@@ -1,6 +1,8 @@
 "use strict"
 
-// menu_burgeris
+const { name } = require("browser-sync");
+
+// header menu burger
 
 let menuTrigger = document.getElementById("mobile-menu-trigger");
 let mobileMenu = document.querySelector("header nav");
@@ -9,6 +11,12 @@ menuTrigger.addEventListener('click', function() {
   this.classList.toggle("active");
   mobileMenu.classList.toggle("active");
 });
+
+// hero form table
+
+
+
+
 
 // features section tab navigation
 

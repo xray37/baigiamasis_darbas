@@ -1,0 +1,139 @@
+.title {
+    display: flex;
+    background-color: #1C1C1C;
+
+
+    @media (max-width: 1000px) {
+        padding-bottom: 60px;
+    }
+    
+    .titleLogo {
+        display: flex;
+        flex-direction: column;
+
+        .title-img {
+            width: 380px;
+            margin-top: 210px;
+            margin-bottom: 220px;
+            margin-right: 170px;
+            margin-left: 210px;
+        }
+    }
+}
+
+    .titleContent {
+        flex-direction: column;
+
+        .title-h3 {
+            position: relative;
+            font-size: 28px;
+            color: #FFFFFF;
+            padding-top: 100px;
+            padding-right: 200px;
+            padding-left: 0px; 
+            margin-bottom: 10px;
+
+            @media (max-width: 1280px) {
+                padding-right: 0px;}
+            
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 200px;
+                height: 2px;
+                top: 200px;
+                background-color: #E27866;
+
+                @media (max-width: 1080px) {
+                    top: 220px;}
+                @media (max-width: 990px) {
+                    display: none;}
+                }
+            }
+
+        .title-text {
+            max-width: 700px;
+            height: 60px;
+            font-size: 14px;
+            padding-left: 0px;
+            padding-top: 50px;
+            padding-right: 170px;
+            padding-bottom: 45px;
+
+            @media (max-width: 1280px) {
+                padding-right: 0px;}
+        }
+
+    p {
+        padding-left: 20px;
+        padding-bottom: 34px;
+        color: #FFFFFF;
+        font-size: 14px;
+    }
+
+    h6 {
+        padding-left: 20px;
+        padding-bottom: 5px;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 14px;
+
+    }
+}
+
+    .title-box {
+       display: flex;
+       flex-direction: column;
+       max-width: 400px;
+       height: 60px;
+    
+    .title-row {
+        display: flex;
+        flex-direction: column;
+        
+
+        @media (max-width: 1280px) {
+            padding-right: 10px;}
+
+    }}
+       
+    @media (max-width: 990px) { 
+
+        .title {
+            display: inline-block;
+            background-color: #1C1C1C;
+            
+        
+            .titleLogo {
+                flex-direction: row;
+        
+                .title-img {
+                    display:block; 
+                    margin:auto;
+                    margin-top: 20%;
+                    margin-bottom: 10%;
+                    padding-bottom: 0px;
+                }
+            }
+        }
+            .titleContent {
+                display: inline-block;
+                text-align:center;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                h6 {
+                    padding-left: 10px;
+                }
+            }
+                .title-box {
+                    display: inline-block;
+                    text-align: center;
+                   
+                 .title-row {
+                    display: inline-block;
+                    text-align:center;
+                 }
+                }
+            }

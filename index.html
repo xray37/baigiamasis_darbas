@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Montserrat:wght@100;300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>FE_baigiamasis</title>
@@ -42,7 +42,7 @@
         </div>
     </header>
     <main>
-        <section class="hero" id="features">
+        <section class="hero">
             <div class="container">
                 <div class="column">
                     <img src="images/logo.svg" alt="main_logo" width="250px">
@@ -57,13 +57,14 @@
                     </button>
                 </div>
                 <div class="form-box">
-                    <form>
+                    <form id="hero-form">
                         <div class="form-row">
                             <h2 class="form-top">Try Your<span style="color:#E27866;"> FREE </span>trial Today</h2>
                             <p>Your details</p>
-                            <input type= "text" placeholder="   First Name">
-                            <input type= "text" placeholder="   Last Name">
-                            <input type= "number" placeholder="   Phone Number">
+                            <div id='hero-error' style="font-style: italic; font-size:10pt; color: red; text-align: center;"></div>
+                            <input id="hero-name" type= "text" placeholder="   First Name">
+                            <input id="hero-surname" type= "text" placeholder="   Last Name">
+                            <input id="hero-phone" type= "number" placeholder="   Phone Number">
                             <p class="type">Type of subscription</p>
                             <div class="rows">
                                 <div class="radio-input-wrap">
@@ -75,7 +76,7 @@
                                     <label for="subscription-yearly">Yearly</label>
                                 </div>
                             </div>
-                            <h2 class="form-bottom">GET STARTED</h2>
+                            <button class="form-bottom" type="submit">GET STARTED</button>
                         </div>
                     </form>
                 </div>
@@ -105,7 +106,7 @@
                 </a>
             </div>
         </section>
-        <section class="features">
+        <section class="about" id="features">
             <div class="container">
             <nav class="tab-navigation">
                 <ul>
@@ -134,23 +135,53 @@
              </div>
         </div>
         </section>
-        <section class="title">
+        <section class="title" id="about">
             <div class="titleLogo">
                 <img class="title-img" src="images/logo.svg" alt="main_logo">
             </div>
             <div class="titleContent">
-                <h3>Erat tempor tempus erat malesuada</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
-                <h6>Title</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                <h6>Title</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
-           </div>
+                <h3 class="title-h3">Erat tempor tempus<br>erat malesuada</h3>
+                <p class="title-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                <div class="title-box">
+                    <div class="title-icons">
+                        <img src="images/akis.svg" alt="sections_icon">
+                    </div>
+                    <div class="title-row">
+                        <h6>Title</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                    </div>
+                </div>
+                <div class="title-icons">
+                    <img src="images/chat.svg" alt="sections_icon">
+                </div>
+                    <div class="title-row">
+                        <h6>Title</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                    </div>
+                </div>
         </section>
-        <section class="process">
-
+        <section class="why">
+            <h2 class="why-h2">WHY THIS IS AWESOME</h2>
+            <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="why-box">
+                <div class="why-row">
+                    <img src="/images/prize.svg" alt="sections_icon">
+                    <h3 class="why-h3">Thoughtful Design</h3>
+                    <p class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aeneaias eos error tempore, nostrum mollitia odit delectus, ex autem optio sapiente. Ullam?.</p>
+                </div>
+                <div class="why-row middle">
+                    <img src="/images/flover.svg" alt="sections_icon">
+                    <h3 class="why-h3">Well Crafted</h3>
+                    <p class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean euismod bibendum.</p>
+                </div>
+                <div class="why-row">
+                    <img src="/images/visa.svg" alt="sections_icon">
+                    <h3 class="why-h3">Easy to Customize</h3>
+                    <p class="p2">Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
+                </div>
+            </div>
         </section>
-        <section class="pricing">
+        <section class="pricing" id="pricing">
             <div class="box">
                 <h2>Pricing options</h2>
                 <div></div>
