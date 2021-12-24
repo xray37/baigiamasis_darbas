@@ -15,7 +15,7 @@
             content: "";
             position: absolute;
             margin-top: 20px;
-            width: 64px;
+            width: 65px;
             height: 2px;
             top: 50px;
             left: 48%;
@@ -83,41 +83,46 @@ table {
         border-top-right-radius: 5px;
         }
     }
-    tr:nth-child(-n+1){
+    tr:nth-child(-n+1) {
         font-size: 20px;
     }
-    tr:nth-child(2){
+
+    tr:nth-child(2) {
         font-size: 94px;
         color: #FFFFFF;
     }
-    tr:nth-child(3){
+
+    tr:nth-child(3) {
         font-size: 14px;
         color: #999999;
-        td{
+        td {
             padding-top: 14px;
         padding-bottom: 19px;
         }
     }
-    tr:nth-child(4){
+
+    tr:nth-child(4) {
         font-size: 14px;
         color: #FFFFFF;
         background-color:#41D395;
 
-        .popular{
+        .popular {
         padding-top: 10px;
         padding-bottom: 12px;
         }
-        td{
+
+        td {
             height: 6px;
         }
     }
-    tr:nth-child(n+5){
+
+    tr:nth-child(n+5) {
         font-size: 14px;
         color: #999999;
         background-color: #FFFFFF;
-        td{
-            padding-top: 11px;
-        padding-bottom: 11px;
+        td {
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
     }
 
