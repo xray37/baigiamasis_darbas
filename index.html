@@ -61,10 +61,9 @@
                         <div class="form-row">
                             <h2 class="form-top">Try Your<span style="color:#E27866;"> FREE </span>trial Today</h2>
                             <p>Your details</p>
-                            <div id='hero-error' style="font-style: italic; font-size:10pt; color: red; text-align: center;"></div>
-                            <input id="hero-name" type= "text" placeholder="   First Name">
-                            <input id="hero-surname" type= "text" placeholder="   Last Name">
-                            <input id="hero-phone" type= "number" placeholder="   Phone Number">
+                            <input id="hero-name" type= "text" placeholder="   First Name" required>
+                            <input id="hero-lastname" type= "text" placeholder="   Last Name" required>
+                            <input id="hero-phone" type= "number" placeholder="   Phone Number" required>
                             <p class="type">Type of subscription</p>
                             <div class="rows">
                                 <div class="radio-input-wrap">
@@ -90,19 +89,19 @@
             </div>
             <div class="socialsColumn2">
                 <a href="https://www.facebook.com/" target="_blank">
-                    <img src="images/facebook-logo.svg" class="facebook" alt="facebook-logo">
+                    <img src="images/facebook-logo.svg" class="facebook" alt="facebook-link">
                 </a>
                 <a href="https://www.instagram.com/" target="_blank">
-                    <img src="images/instagram-logo.svg" class="instagram" alt="instagram-logo">
+                    <img src="images/instagram-logo.svg" class="instagram" alt="instagram-link">
                 </a>
                 <a href="https://twitter.com/" target="_blank">
-                    <img src="images/twitter.svg" class="twitter" alt="twitter-logo">
+                    <img src="images/twitter.svg" class="twitter" alt="twitter-link">
                 </a>
                 <a href="https://pinterest.com/" target="_blank">
-                    <img src="images/pinterest.svg" class="pinterest" alt="pinterest-logo">
+                    <img src="images/pinterest.svg" class="pinterest" alt="pinterest-link">
                 </a>
                 <a href="https://en.wikipedia.org/wiki/Wi-Fi" target="_blank">
-                    <img src="images/wifi.svg" class="wifi" alt="wifi-logo">
+                    <img src="images/wifi.svg" class="wifi" alt="wifi-link">
                 </a>
             </div>
         </section>
@@ -121,19 +120,26 @@
                     </li>
                 </ul>
             </nav>
-            <div class="text">
-                <div data-tab="register" class="tab-content active">Tabs with soft transitioning effect.<br>Explained propriety of out perpetual his you.</div>
-                <div data-tab="apply" class="tab-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quod ullam esse ipsum hic itaque fugit? Totam, dolorum repellat recusandae voluptates aliquid ea quos fuga corporis, nam, impedit quaerat et.</div>
-                <div data-tab="receive" class="tab-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis corporis tenetur aliquam optio architecto, cum incidunt accusamus possimus mollitia labore dolore dolores aperiam fugit necessitatibus ea quas excepturi similique modi.</div>
-            </div>
-            <div class="fotos">
-                <div class="boxRow">
-                 <div class="box1"></div>
-                 <div class="box2"></div>
-             </div>
-                 <div class="box3"></div>
-             </div>
-        </div>
+            <div class="about-content">
+                <div data-tab="register" class="tab-content active">
+                    <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore placeat aliquid error ea tempore illum, neque magni omnis, quam porro cum qui quae odio facilis impedit mollitia numquam non amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur suscipit optio fugiat accusantium quod, harum itaque dicta in totam esse amet exercitationem, mollitia debitis ducimus eos molestias saepe vel quas.</p>
+                </div>
+                <div class="about-pictures">
+                    <div class="box-row">
+                        <div class="box1"></div>
+                        <div class="box2"></div>
+                    </div>
+                        <div class="box3"></div>
+                </div>
+                <div data-tab="apply" class="tab-content">
+                    <h2>Apply content</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nobis reiciendis voluptatibus ex consequuntur officiis illo explicabo. Repellat quibusdam delectus iusto totam culpa alias quo harum. Obcaecati autem nostrum quas!</p>
+                </div>
+                <div data-tab="receive" class="tab-content">
+                    <h2>Receive content</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nobis reiciendis voluptatibus ex consequuntur officiis illo explicabo. Repellat quibusdam delectus iusto totam culpa alias quo harum. Obcaecati autem nostrum quas!</p>
+                </div> 
         </section>
         <section class="title" id="about">
             <div class="titleLogo">
@@ -293,7 +299,7 @@
         </section>
         <section class="testimonials" id="reviews">
             <div class="container">
-                <h2 class="testimonials-h2">What our customers are saying?</h2>
+                <h2 class="testimonials-h2">What our customers are saying</h2>
                 <!-- Slider main container -->
                 <div class="swiper reviews-swiper">
                     <!-- Additional required wrapper -->
@@ -302,7 +308,16 @@
                         <div class="swiper-slide">
                             <div class="single-review">
                                 <div class="text">
-                                    <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                    <p class="chat">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                            <div class="client">
+                                <div class="clients-photo">
+                                    <div class="client1"></div>
+                                </div>
+                                <div class="clients-info">
+                                    <span id="person">Jeremy H.</span>
+                                    <span id="profession">Manager</span>
                                 </div>
                             </div>
                         </div>
@@ -312,18 +327,45 @@
                                     <p class="chat">2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="single-review">
-                                <div class="text">
-                                    <p class="chat">3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                            <div class="client">
+                                <div class="clients-photo">
+                                    <div class="client2"></div>
+                                </div>
+                                <div class="clients-info">
+                                    <span id="person">John S.</span>
+                                    <span id="profession">Freelancer</span>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="single-review">
                                 <div class="text">
-                                    <p class="chat">4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                    <p class="chat">3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, quibusdam porro! Eveniet, voluptatum, dolores, expedita veniam accusamus perferendis soluta cum vitae autem alias ullam consectetur. Nihil numquam accusamus voluptatibus laborum. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                            <div class="client">
+                                <div class="clients-photo">
+                                    <div class="client3"></div>
+                                </div>
+                                <div class="clients-info">
+                                    <span id="person">Olya K.</span>
+                                    <span id="profession">Photographer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p class="chat">4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora magnam quae quibusdam accusantium laborum dolorum sint earum, delectus minus. Delectus odit sunt vel dolor cumque maiores cum consequuntur, omnis eveniet?</p>
+                                </div>
+                            </div>
+                            <div class="client">
+                                <div class="clients-photo">
+                                    <div class="client4"></div>
+                                </div>
+                                <div class="clients-info">
+                                    <span id="person">Maeva V.</span>
+                                    <span id="profession">Accountant</span>
                                 </div>
                             </div>
                         </div>
@@ -333,11 +375,125 @@
                                     <p class="chat">5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
                                 </div>
                             </div>
+                            <div class="client">
+                                <div class="clients-photo">
+                                    <div class="client5"></div>
+                                </div>
+                                <div class="clients-info">
+                                    <span id="person">Brock W.</span>
+                                    <span id="profession">Dentist</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="single-review">
                                 <div class="text">
                                     <p class="chat">6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                            <div class="client">
+                                <div class="clients-photo">
+                                    <div class="client6"></div>
+                                </div>
+                                <div class="clients-info">
+                                    <span id="person">Hossein B.</span>
+                                    <span id="profession">Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p class="chat">7 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facere sequi ipsam quaerat vero iusto voluptate ipsum ab inventore maiores, laborum consequuntur nam voluptatem placeat eos ad sed alias neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                            <div class="client">
+                                <div class="clients-photo">
+                                    <div class="client7"></div>
+                                </div>
+                                <div class="clients-info">
+                                    <span id="person">Hesam J.</span>
+                                    <span id="profession">Sensei</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p class="chat">8 Beatae facere sequi ipsam quaerat vero iusto voluptate ipsum ab inventore maiores, laborum consequuntur nam voluptatem placeat eos ad sed alias neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                            <div class="client">
+                                <div class="clients-photo">
+                                    <div class="client8"></div>
+                                </div>
+                                <div class="clients-info">
+                                    <span id="person">Ehsan A.</span>
+                                    <span id="profession">Dancer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p class="chat">9 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatanventore maiores, laborum consequuntur nam voluptatem placeat eos ad sed alias neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                            <div class="client">
+                                <div class="clients-photo">
+                                    <div class="client9"></div>
+                                </div>
+                                <div class="clients-info">
+                                    <span id="person">Baylei B.</span>
+                                    <span id="profession">Actor</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p class="chat">10 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="client">
+                                <div class="clients-photo">
+                                    <div class="client5"></div>
+                                </div>
+                                <div class="clients-info">
+                                    <span id="person">Brock W.</span>
+                                    <span id="profession">Dentist</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p class="chat">11 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                            <div class="client">
+                                <div class="clients-photo">
+                                    <div class="client6"></div>
+                                </div>
+                                <div class="clients-info">
+                                    <span id="person">Hossein B.</span>
+                                    <span id="profession">Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p class="chat">12 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facere sequi ipsam quaerat vero iusto voluptate ipsum ab inventore maiores, laborum consequuntur nam voluptatem placeat eos ad sed alias neque.</p>
+                                </div>
+                            </div>
+                            <div class="client">
+                                <div class="clients-photo">
+                                    <div class="client7"></div>
+                                </div>
+                                <div class="clients-info">
+                                    <span id="person">Hesam J.</span>
+                                    <span id="profession">Sensei</span>
                                 </div>
                             </div>
                         </div>
@@ -350,59 +506,53 @@
         </section>
         <section class="contactTable" id="contact">
             <h2>CONTACT US</h2>
-            <p class="paddingP1white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-            <h4>
-                <img src="/images/termo.svg">
-                <span id="weather-in-celsius"></span>
-                <span>°C</span>
-                <span class="city">Sint-Niklaas, Belgium</span>
-            </h4>
-
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="weather-temp">
+                <img src="/images/termo.svg" alt="thermometre icon">
+                <span id="weather-in-celsius" style="font-weight: 600;"></span>
+                <span style="font-weight: 600;">°C</span>
+                <span id="city-weather"></span>
+            </div>
                 <div class="form-box2">
-                    <form form id="form2">
-                        <div class="form-row2">
-                            <div id='error2' style="font-style: italic; margin-bottom: -20px; margin-top:20px; font-size:10pt; color: red;"></div>
-                            <input id="name2" type= "text" placeholder="  First Name" style="padding-top: 33px;">
-                            <input id="lastname2" type= "text" placeholder="  Last Name">
-                            <input id="number2" type= "number" placeholder="  Phone Number">
-                            
-                            <div class="rows2">
-                                <div class="radio-input-wrap2">
-                                    <input class="ech" type="radio" name="subscription" id="subscription-personal" checked>
-                                    <label class="label2"for="subscription-personal">PERSONAL</label>
-                                </div>
-    
-                                <div class="radio-input-wrap2">
-                                    <input class="ech" type="radio" name="subscription" id="subscription-company">
-                                    <label class="label2" for="subscription-company">COMPANY</label>
-                                </div>
+                    <form>
+                        <div class="form">
+                            <input class="form-input" id="name2" type= "text" placeholder="  First Name" style="margin-top: 50px;" required>
+                            <input class="form-input" id="lastname2" type= "text" placeholder="  Last Name" required>
+                            <input class="form-input" id="number2" type= "number" placeholder="  Phone Number" required>
                         </div>
-                            <button type="submit2">SAVE</button>
+                        <div class="rows">
+                            <div class="radio-input-wrap2">
+                                <input class="abc" type="radio" name="subscription" id="subscription-personal" checked>
+                                <label class="label2"for="subscription-personal">personal</label>
+                            </div>
+                            <div class="radio-input-wrap2">
+                                <input class="abc" type="radio" name="subscription" id="subscription-company">
+                                <label class="label2" for="subscription-company">company</label>
+                            </div>
+                        </div>
+                            <button type="submit2">SEND</button>
                         </div>
                     </form>
-                </div></span>
-            </h2>
-
+                </div>
         </section>
     </main>
     <footer>
         <div class="footerConteiner">
             <div class="footer-left">
                 <a href="https://www.facebook.com/" target="_blank">
-                    <img src="images/facebook-logo.svg" class="facebook" alt="facebook-logo">
+                    <img src="images/facebook-logo.svg" class="facebook" alt="facebook-link">
                 </a>
                 <a href="https://www.instagram.com/" target="_blank">
-                    <img src="images/instagram-logo.svg" class="instagram" alt="instagram-logo">
+                    <img src="images/instagram-logo.svg" class="instagram" alt="instagram-link">
                 </a>
                 <a href="https://twitter.com/" target="_blank">
-                    <img src="images/twitter.svg" class="twitter" alt="twitter-logo">
+                    <img src="images/twitter.svg" class="twitter" alt="twitter-link">
                 </a>
                 <a href="https://pinterest.com/" target="_blank">
-                    <img src="images/pinterest.svg" class="pinterest"alt="pinterest-logo">
+                    <img src="images/pinterest.svg" class="pinterest"alt="pinterest-link">
                 </a>
                 <a href="https://en.wikipedia.org/wiki/Wi-Fi" target="_blank">
-                    <img src="images/wifi.svg" class="wifi" alt="wifi-logo">
+                    <img src="images/wifi.svg" class="wifi" alt="wifi-link">
                 </a>
             </div>
             <div class="footer-right">

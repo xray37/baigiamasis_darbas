@@ -1,7 +1,9 @@
 .testimonials {
-    
+    padding: 20px 0;
+    background-color: #FFFFFF;
 
     .testimonials-h2 {
+        font-size: 36px;
         position: relative;
         text-align: center;
         text-transform: uppercase;
@@ -12,11 +14,12 @@
         &:after {
             content: "";
             position: absolute;
-            width: 64px;
+            width: 90px;
             height: 2px;
-            margin-top: 60px;
+            margin-top: 90px;
             left: 45%;
             background-color: #6696E2;
+
             @media (max-width: 990px) {
                 left: 42%;}
             
@@ -24,7 +27,7 @@
     }
 
     .reviews-swiper {
-        .secondtext{
+        .text {
             margin-top: 10px;
         }
 
@@ -50,8 +53,9 @@
                     border-top: 0;
                     border-top: 10px solid #6696E2;}
 
-                .triangle {
-                    font-size: 16px;
+                p {
+                    font-size: 14px;
+                    font-weight: 300;
                     line-height: 1.375;
                     color: #fff;
                     padding: 20px 20px 20px 20px;
@@ -66,7 +70,7 @@
             position: static;
             margin-top: 85px;
             line-height: 0;
-            margin-bottom: 56.8px;
+            margin-bottom: 30px;
 
             .swiper-pagination-bullet {
                 margin: 0;
@@ -87,15 +91,113 @@
         }
     }
 }
-.person {
-    display: flex;
 
-    img {
-        margin-top: 20px;
-    }
-.personName{
+.client {
+    display: flex;
     flex-direction: row;
-    margin-top: 35px;
-    margin-left: 15px;
-    
-}}
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 15px;
+    user-select: none;
+}
+
+.client1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("/images/people/person1.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.client2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("/images/people/person2.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.client3 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("/images/people/person3.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.client4 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("/images/people/person4.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.client5 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("/images/people/person5.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.client6 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("/images/people/person6.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.client7 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("/images/people/person7.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.client8 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("/images/people/person8.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.client9 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("/images/people/person9.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.clients-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+        #person {
+            font-size: 18px;
+            font-weight: 400;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+        #profession {
+            font-size: 14px;
+            font-weight: 300;
+            color: #86878B;
+            padding-left: 20px;
+        }
+    }

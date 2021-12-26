@@ -1,7 +1,5 @@
 "use strict"
 
-const { name } = require("browser-sync");
-
 // header menu burger
 
 let menuTrigger = document.getElementById("mobile-menu-trigger");
@@ -12,13 +10,7 @@ menuTrigger.addEventListener('click', function() {
   mobileMenu.classList.toggle("active");
 });
 
-// hero form table
-
-
-
-
-
-// features section tab navigation
+// about section tab navigation
 
 const tabNavigationElements = document.querySelectorAll(".about .tab-navigation li");
 const tabContentElements = document.querySelectorAll(".about .tab-content");
@@ -41,29 +33,34 @@ for (let tabElement of tabNavigationElements) {
     });
 }
 
-
-
-
 // testimonials section swiper gallery
 
 const swiper = new Swiper('.reviews-swiper', {
-  speed: 900,
-  slidesPerView: 1,
-  spaceBetween: 50,
-  // slidesPerGroup: 3,
+  speed: 2000,
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 120,
   autoHeight: true,
   loop: true,
   autoplay: {
-      delay: 2000,
+      delay: 3000,
   },
   pagination: {
       el: '.swiper-pagination',
       clickable: true
   },
+
+
   breakpoints: {
       800: {
         slidesPerView: 3,
         spaceBetween: 120
+      },
+
+      320: {
+          slidesPerGroup: 1,
+          slidesPerView: 1,
+          spaceBetween: 50,
       }
     }
 });
@@ -75,6 +72,7 @@ const swiper = new Swiper('.reviews-swiper', {
 
 const url = "https://api.openweathermap.org/data/2.5/weather?q=Sint-Niklaas&units=metric&appid=3938ac6ab938c88279184afe6c675938";
 const weatherElement = document.getElementById("weather-in-celsius");
+const weatherLocation = document.getElementById("city-weather");
 
 function getCurrentWeatherInCelsius() {
     const http = new XMLHttpRequest();
@@ -92,4 +90,17 @@ function getCurrentWeatherInCelsius() {
     http.send();
 }
 
-window.addEventListener('load', getCurrentWeatherInCelsius)
+function getCurrentWeatherLocation(){
+    const http = new XMLHttpRequest();
+    http.open("GET", url);
+    http.addEventListener('load', function(){
+        const response = JSON.parse(http.response);
+        const location = response.name;
+        const country = response.sys.country;
+        weatherLocation.innerHTML = location + ", " + country;
+    })
+    http.send();
+}
+
+window.addEventListener('load', getCurrentWeatherInCelsius);
+window.addEventListener('load', getCurrentWeatherLocation);

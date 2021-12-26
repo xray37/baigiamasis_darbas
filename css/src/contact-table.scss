@@ -5,51 +5,79 @@
     color: #FFFFFF;
     background: #E27866;
 
-    
-    h4 {
-        color: #FFFFFF;
-        font-size: 18px;
-        padding-bottom: 18px;
-
-        .city{
-            font-size: 12px;
-
-        }
+    h2 {
+        font-size: 36px;
     }
+
     p {
         color: #FFFFFF; 
-        padding-top: 23px;
         font-size: 14px;
-        padding-bottom: 18px;
+        font-weight: 300;
+        padding-top: 30px;
+        padding-bottom: 20px;
     }
 }
+
+.weather-temp {
+    display: flex;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 39%;
+
+    .city {
+        font-size: 12px;
+        font-weight: 300;
+        padding-left: 25px;
+        padding-top: 5px;
+    }
+
+    img {
+        padding-right: 10px;
+    }
+
+    #city-weather {
+        font-size: 12px;
+        font-weight: 300;
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+
+}
+
 .form-box2 {        
     max-width: 390px;
     width: 100%;
     border-radius: 5px;
     background-color: #fff;
-    margin: auto;
+    box-shadow: 0 6px 6px rgba(121, 119, 119, 0.671);
+    margin: 0 auto;
 
 
-    button{
+    button {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
         background-color: #41D395;
         cursor: pointer;
-        width: 158.12px;
-        height: 48px;
-        margin-bottom: 32.2px;
-        margin-left: 25%;
+        width: 160px;
+        height: 50px;
+        margin-bottom: 30px;
+        
         border-color: transparent;
         border-radius: 5px;
 
     }
-    .form-row2 {
+
+    .form {
         display: flex;
         flex-direction: column;
 
     } 
-    input{
-        color:#DDDDDD;
+    input {
         font-size: 12px;
+        font-weight: 300;
         margin-top: 20px;
         margin-bottom: 22px;
         margin-left: 60px;
@@ -57,28 +85,29 @@
         border-top: #ffffff00;
         border-left: #ffffff00;
         border-right: #ffffff00;
-        border-bottom: 1px solid #DDDDDD;
+        border-bottom: 1px solid rgba(185, 181, 181, 0.932);
         width: 260px;
-        color: #1C1C1C;
     }
     }
-    .rows2{
+
+    .rows {
         display: flex;
         font-size: 9px;
-        // padding-top: 33px;
         margin-left: 65px;
         margin-bottom: 42px;
 
     }
+
     .radio-input-wrap2 {
         flex-direction: row;
         margin-left: 17px;
-        .ech {
+
+        .abc {
             font-size: 9px;
             display: none;
         }
 
-        .ech:checked ~ label::before {
+        .abc:checked ~ label::before {
             background: #41D395;
             box-shadow: inset 0px 0px 0px 2px #fff;
         }
@@ -87,7 +116,9 @@
         .label2 {
             text-transform: uppercase;
             cursor: pointer;
-            color: #000000;
+            color: #524f4f;
+            font-size: 9px;
+            font-weight: 600;
 
             &:before {
                 content: '';
@@ -97,7 +128,7 @@
                 border-radius: 50%;
                 border: 1px solid #41D395;
                 transition: 0.3s ease-in-out;
-                margin-right: 5.1px;
+                margin-right: 5px;
             }
         }
     }
