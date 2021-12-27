@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Montserrat:wght@100;300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>FE_baigiamasis</title>
 </head>
@@ -45,7 +46,7 @@
         <section class="hero">
             <div class="container">
                 <div class="column">
-                    <img src="images/logo.svg" alt="main_logo" width="250px">
+                    <img data-aos="flip-left" src="images/logo.svg" alt="main_logo" width="250px">
                     
                     <h1 class="name">Explained propriety <br>of out perpetual to you</h1>
                     <h5 class="h5">Insipidity the sufficient discretion imprudence resolution sir him decisively.
@@ -61,9 +62,9 @@
                         <div class="form-row">
                             <h2 class="form-top">Try Your<span style="color:#E27866;"> FREE </span>trial Today</h2>
                             <p>Your details</p>
-                            <input id="hero-name" type= "text" placeholder="   First Name" required>
-                            <input id="hero-lastname" type= "text" placeholder="   Last Name" required>
-                            <input id="hero-phone" type= "number" placeholder="   Phone Number" required>
+                            <input id="hero-name" type= "text" placeholder="   First Name*" required>
+                            <input id="hero-lastname" type= "text" placeholder="   Last Name*" required>
+                            <input id="hero-phone" type= "number" placeholder="   Phone Number*" required>
                             <p class="type">Type of subscription</p>
                             <div class="rows">
                                 <div class="radio-input-wrap">
@@ -109,13 +110,13 @@
             <div class="container">
             <nav class="tab-navigation">
                 <ul>
-                    <li data-target="register" class="active">
+                    <li data-aos="fade-right" data-target="register" class="active">
                         <span>Register</span>
                     </li>
-                    <li data-target="apply">
+                    <li data-aos="fade-right" data-target="apply">
                         <span>Apply</span>
                     </li>
-                    <li data-target="receive">
+                    <li data-aos="fade-right" data-target="receive">
                         <span>Receive</span>
                     </li>
                 </ul>
@@ -128,10 +129,10 @@
                     </div>
                     <div class="pictures-grid">
                         <div class="grid-row">
-                            <div class="box1 item1"></div>
-                            <div class="box2 item2"></div>
+                            <div class="box1" data-aos="fade-left"></div>
+                            <div class="box2" data-aos="fade-left"></div>
                         </div>
-                        <div class="box3 item3"></div>
+                        <div class="box3" data-aos="fade-left"></div>
                     </div>
                 </div>
             </div>
@@ -143,10 +144,10 @@
                     </div>
                     <div class="pictures-grid">
                         <div class="grid-row">
-                            <div class="box4"></div>
-                            <div class="box5"></div>
+                            <div class="box4" data-aos="fade-left"></div>
+                            <div class="box5" data-aos="fade-left"></div>
                         </div>
-                        <div class="box6"></div>
+                        <div class="box6" data-aos="fade-left"></div>
                     </div>
                 </div>
             </div>
@@ -158,17 +159,17 @@
                     </div>
                     <div class="pictures-grid">
                         <div class="grid-row">
-                            <div class="box7"></div>
-                            <div class="box8"></div>
+                            <div class="box7" data-aos="fade-left"></div>
+                            <div class="box8" data-aos="fade-left"></div>
                         </div>
-                        <div class="box9"></div>
+                        <div class="box9" data-aos="fade-left"></div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="title" id="about">
             <div class="titleLogo">
-                <img class="title-img" src="images/logo.svg" alt="main_logo">
+                <img data-aos="flip-left" class="title-img" src="images/logo.svg" alt="main_logo">
             </div>
             <div class="titleContent">
                 <h3 class="title-h3">Erat tempor tempus<br>erat malesuada</h3>
@@ -194,7 +195,7 @@
             </div>
         </section>
         <section class="why">
-            <h2 class="why-h2">WHY THIS IS AWESOME</h2>
+            <h2 class="why-h2" data-aos="flip-down">WHY THIS IS AWESOME</h2>
             <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="why-box">
                 <div class="why-row">
@@ -215,9 +216,9 @@
             </div>
         </section>
         <section class="pricing" id="pricing">
-            <h2 class="pricing-h2">PRICING OPTIONS</h2>
+            <h2 class="pricing-h2" data-aos="flip-down">PRICING OPTIONS</h2>
             <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div class="pricingBox">
+            <div class="pricingBox" data-aos="zoom-in">
                 <div class="pricing-row">
                     <table class="side">
                         <tr>
@@ -324,7 +325,7 @@
         </section>
         <section class="testimonials" id="reviews">
             <div class="container">
-                <h2 class="testimonials-h2">What our customers are saying</h2>
+                <h2 class="testimonials-h2" data-aos="flip-down">What our customers are saying</h2>
                 <!-- Slider main container -->
                 <div class="swiper reviews-swiper">
                     <!-- Additional required wrapper -->
@@ -530,7 +531,7 @@
             </div>
         </section>
         <section class="contactTable" id="contact">
-            <h2>CONTACT US</h2>
+            <h2 data-aos="flip-down">CONTACT US</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="weather-temp">
                 <img src="images/termo.svg" alt="thermometre icon">
@@ -540,10 +541,10 @@
             </div>
                 <div class="form-box2">
                     <form>
-                        <div class="form">
-                            <input class="form-input" id="name2" type= "text" placeholder="  First Name" style="margin-top: 50px;" required>
-                            <input class="form-input" id="lastname2" type= "text" placeholder="  Last Name" required>
-                            <input class="form-input" id="number2" type= "number" placeholder="  Phone Number" required>
+                        <div class="form" data-aos="zoom-in">
+                            <input class="form-input" id="name2" type= "text" placeholder="  First Name*" style="margin-top: 50px;" required>
+                            <input class="form-input" id="lastname2" type= "text" placeholder="  Last Name*" required>
+                            <input class="form-input" id="number2" type= "number" placeholder="  Phone Number*" required>
                         </div>
                         <div class="rows">
                             <div class="radio-input-wrap2">
@@ -586,6 +587,7 @@
         </div>
     </footer>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

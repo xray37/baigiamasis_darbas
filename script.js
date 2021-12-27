@@ -1,5 +1,9 @@
 "use strict"
 
+// Animate on scroll
+
+AOS.init();
+
 // header menu burger
 
 let menuTrigger = document.getElementById("mobile-menu-trigger");
